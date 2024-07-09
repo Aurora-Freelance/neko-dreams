@@ -23,7 +23,7 @@
     Redbubble</a
   >
   <a
-    class="button"
+    class="button disabled"
     href="https://www.etsy.com/shop/nekodreamsaurora/?etsrc=sdt"
     target="_blank"
   >
@@ -48,9 +48,13 @@
         /></g
       ></svg
     >
-    Etsy</a
+    Etsy (offline)</a
   >
-  <a class="button" href="https://shop.neko-dreams.com" target="_blank">
+  <a
+    class="button disabled"
+    href="https://shop.neko-dreams.com/collections/all"
+    target="_blank"
+  >
     <svg
       height="63.999px"
       id="Layer_1"
@@ -73,7 +77,7 @@
       ><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g /><g
       /></svg
     >
-    Clothing Shop</a
+    Clothing Shop (offline)</a
   >
   <a
     class="button"
@@ -191,6 +195,13 @@
     gap: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle drop shadow */
     z-index: 999;
+  }
+
+  .disabled {
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.3;
   }
 
   .button:hover {
