@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <div class="container">
   <h1 class="brand">Neko Dreams <br /> (猫の夢)</h1>
   <img class="banner" alt="banner" src="/cat_dragon_japanese.jpg" />
