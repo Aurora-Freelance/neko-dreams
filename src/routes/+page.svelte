@@ -206,9 +206,10 @@
     background-color: white;
     border-radius: 100px;
   }
-  @media (min-width: 768px) {
+  @media (orientation: landscape) {
     .container {
       justify-content: flex-end; /* Align content to the bottom */
+      padding-bottom: 20px;
     }
   }
 </style>
