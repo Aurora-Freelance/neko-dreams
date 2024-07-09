@@ -138,7 +138,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
     height: 100vh;
     overflow: auto;
     background: linear-gradient(
@@ -161,10 +161,14 @@
     top: 0;
     left: auto;
     right: 15px;
+    z-index: 1000;
   }
 
   .banner {
     width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
   }
 
   .button {
@@ -186,6 +190,7 @@
     justify-content: center;
     gap: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle drop shadow */
+    z-index: 999;
   }
 
   .button:hover {
@@ -200,5 +205,10 @@
     left: 5px; /* Adjust this value as needed */
     background-color: white;
     border-radius: 100px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      justify-content: flex-end; /* Align content to the bottom */
+    }
   }
 </style>
